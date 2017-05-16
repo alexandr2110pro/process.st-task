@@ -9,7 +9,8 @@
   "scripts": {
     "test": "cross-env NODE_ENV=test karma start --single-run",
     "start:dev": "cross-env NODE_ENV=development webpack-dev-server --colors --content-base=./src/ --config ./webpack.dev.js",
-    "build": "cross-env NODE_ENV=production DEBUG=false webpack --progress --optimize-minimize --config ./webpack.prod.js"
+    "build": "cross-env NODE_ENV=production DEBUG=false webpack --progress --optimize-minimize --config ./webpack.prod.js",
+    "start": "cross-env NODE_ENV=production static-server dist"
   },
   "author": "Alexandr Cherednichenko",
   "license": "ISC",
@@ -19,6 +20,7 @@
     "blueimp-file-upload": "^9.18.0",
     "blueimp-load-image": "^2.12.2",
     "blueimp-tmpl": "^3.8.0",
+    "express-simple-static-server": "^0.1.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "jquery-ui": "^1.12.1",
