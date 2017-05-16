@@ -10,7 +10,7 @@
     "test": "cross-env NODE_ENV=test karma start --single-run",
     "start:dev": "cross-env NODE_ENV=development webpack-dev-server --colors --content-base=./src/ --config ./webpack.dev.js",
     "build": "cross-env NODE_ENV=production DEBUG=false webpack --progress --optimize-minimize --config ./webpack.prod.js",
-    "start": "./node_modules/.bin/static-server ./dist"
+    "start": "node ./server.js"
   },
   "author": "Alexandr Cherednichenko",
   "license": "ISC",
@@ -20,7 +20,8 @@
     "blueimp-file-upload": "^9.18.0",
     "blueimp-load-image": "^2.12.2",
     "blueimp-tmpl": "^3.8.0",
-    "express-simple-static-server": "^0.1.0",
+    "cfenv": "^1.0.4",
+    "express": "^4.15.2",
     "font-awesome": "^4.7.0",
     "jquery": "^3.2.1",
     "jquery-ui": "^1.12.1",
@@ -62,6 +63,7 @@
     "karma-coverage-istanbul-reporter": "^1.2.1",
     "karma-jasmine": "^1.1.0",
     "karma-mocha-reporter": "^2.2.3",
+    "karma-phantomjs-launcher": "^1.0.4",
     "karma-sourcemap-loader": "^0.3.7",
     "karma-webpack": "^2.0.3",
     "less": "^2.7.2",
