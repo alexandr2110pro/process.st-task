@@ -1,0 +1,15 @@
+<div class="video-upload">
+
+  <progress-bar class="video-upload__progress-bar"
+                progress="$ctrl.progress"
+                ng-if="$ctrl.progressVisible"></progress-bar>
+
+
+  <div class="video-upload__input-container" ng-hide="$ctrl.progressVisible">
+
+    <label class="video-upload__upload-button-label" for="upload-input">Upload your video</label>
+    <input class="video-upload__input" id="upload-input" type="file" name="files[]" />
+
+  </div>
+
+</div>

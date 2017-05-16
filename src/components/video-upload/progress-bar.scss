@@ -1,0 +1,20 @@
+@import "~shared/styles/colors";
+
+
+progress-bar {
+  display: block;
+}
+
+
+.progress-bar {
+  background-color: #dae9e4;
+  border-radius: 10px;
+  width: 100%;
+
+  &__fill {
+    border-radius: 10px;
+    background-color: $accent-cyan;
+    height: 100px;
+    transition: .1s width;
+  }
+}

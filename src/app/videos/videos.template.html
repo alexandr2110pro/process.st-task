@@ -1,0 +1,9 @@
+<video-player ng-if="$ctrl.playerIsVisible" video="$ctrl.video"></video-player>
+
+<video-upload ng-if="$ctrl.uploadIsVisible"
+              on-uploaded="$ctrl.onUploaded(result)"
+              on-failed="$ctrl.onFailed(data)">
+
+</video-upload>
+
+<videos-browser ng-if="$ctrl.broserIsVisible"></videos-browser>

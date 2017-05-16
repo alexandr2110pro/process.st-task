@@ -1,0 +1,32 @@
+{
+  "presets": [
+    [
+      "latest",
+      {
+        "es2015": {
+          "modules": false
+        }
+      }
+    ],
+    "stage-2"
+  ],
+  "plugins": [
+    "transform-async-to-generator",
+    "transform-runtime",
+    [
+      "module-resolver",
+      {
+        "alias": {
+          "shared": "./src/shared"
+        }
+      }
+    ]
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        "rewire"
+      ]
+    }
+  }
+}
