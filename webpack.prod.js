@@ -20,7 +20,7 @@ const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const HashedModuleIdsPlugin = webpack.HashedModuleIdsPlugin;
 const CommonsChunkPlugin    = webpack.optimize.CommonsChunkPlugin;
 
-const { DIST_DIR } = require('./folderPath');
+const { DIST_DIR } = require('./directories');
 
 const DEBUG = !!process.env.DEBUG || false;
 
