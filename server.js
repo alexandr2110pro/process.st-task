@@ -4,7 +4,9 @@ const DIST_DIR_NAME = require('./directories').DIST_DIR_NAME;
 const cfenv = require('cfenv');
 const app   = express();
 
+
 app.use(express.static(__dirname + '/' + DIST_DIR_NAME));
+app.use('/', express.static('./dist'));
 
 const appEnv = cfenv.getAppEnv();
 
