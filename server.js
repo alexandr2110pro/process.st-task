@@ -5,12 +5,13 @@ const cfenv = require('cfenv');
 const app   = express();
 
 
-app.use(express.static(__dirname + '/' + DIST_DIR_NAME));
-app.use('/', express.static('./dist'));
+app.use(express.static(__dirname + '/dist'));
 
 const appEnv = cfenv.getAppEnv();
 
 app.listen(appEnv.port, '0.0.0.0', function() {
 
-    console.log('server starting on ' + appEnv.url);
+    console.log('\n------\nserver starting on ' + appEnv.url+':' appEnv.port);
+    console.log('\n------\nserver __dirname: ' + __dirname);
+
 });
