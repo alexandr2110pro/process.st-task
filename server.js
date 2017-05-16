@@ -11,7 +11,7 @@ const appEnv = cfenv.getAppEnv();
 
 app.listen(appEnv.port, '0.0.0.0', function() {
 
-    console.log('\n------\nserver starting on ' + appEnv.url+':' appEnv.port);
+    console.log('\n------\nserver starting on ' + appEnv.url + ':' + appEnv.port);
     console.log('\n------\nserver __dirname: ' + __dirname);
 
 });
